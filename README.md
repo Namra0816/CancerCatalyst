@@ -38,8 +38,8 @@ AI Cancer Care provides an easy and efficient way to craft personalized cancer c
 1. **Clone the Repository**
 
    ```bash
-   git clone 
-   cd 
+   git clone https://github.com/Namra0816/CancerCatalyst.git
+   cd CancerCatalyst
    ```
 
 2. **Install Dependencies**
