@@ -21,7 +21,7 @@ const DisplayInfo = () => {
     totalScreenings: 0,
     completedScreenings: 0,
     pendingScreenings: 0,
-    overdueScreenings: 0,
+    // overdueScreenings: 0,
   });
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const DisplayInfo = () => {
           let totalScreenings = 0;
           let completedScreenings = 0;
           let pendingScreenings = 0;
-          let overdueScreenings = 0;
+          // let overdueScreenings = 0;
 
           records.forEach((record) => {
             if (record.kanbanRecords) {
@@ -52,9 +52,9 @@ const DisplayInfo = () => {
                 pendingScreenings += kanban.tasks.filter(
                   (task) => task.columnId === "doing",
                 ).length;
-                overdueScreenings += kanban.tasks.filter(
-                  (task) => task.columnId === "overdue",
-                ).length;
+                // overdueScreenings += kanban.tasks.filter(
+                //   (task) => task.columnId === "overdue",
+                // ).length;
               } catch (error) {
                 console.error("Failed to parse kanbanRecords:", error);
               }
@@ -67,7 +67,7 @@ const DisplayInfo = () => {
             totalScreenings,
             completedScreenings,
             pendingScreenings,
-            overdueScreenings,
+            // overdueScreenings,
           });
         })
         .catch((e) => {
@@ -120,13 +120,13 @@ const DisplayInfo = () => {
       icon: IconHourglassHigh,
       onClick: () => navigate("/screenings/pending"),
     },
-    {
-      title: "Overdue Screenings",
-      subtitle: "View",
-      value: metrics.overdueScreenings,
-      icon: IconAlertCircle,
-      onClick: () => navigate("/screenings/overdue"),
-    },
+    // {
+    //   title: "Overdue Screenings",
+    //   subtitle: "View",
+    //   value: metrics.overdueScreenings,
+    //   icon: IconAlertCircle,
+    //   onClick: () => navigate("/screenings/overdue"),
+    // },
   ];
 
   return (

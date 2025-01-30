@@ -50,8 +50,8 @@ const Navbar = () => {
   }, [authenticated, login, logout, user, fetchUserInfo]);
 
   return (
-    <div className="mb-[35px] flex flex-col-reverse justify-between gap-6 md:flex-row">
-      <div className="flex h-[52px] max-w-[458px] flex-row rounded-[100px] bg-[#1c1c24] py-2 pl-4 pr-2 lg:flex-1">
+    <div className="mb-[35px] lg:mt-20 flex flex-col-reverse justify-between gap-6 md:flex-row">
+      <div className="flex h-[52px] max-w-[458px] flex-row lg:ml-80 rounded-[100px] bg-[#1c1c24] py-2 pl-4 pr-2 lg:flex-1">
         <input
           type="text"
           placeholder="Search for records"

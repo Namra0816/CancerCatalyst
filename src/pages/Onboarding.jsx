@@ -65,6 +65,7 @@ const Onboarding = () => {
               value={age}
               onChange={(e) => setAge(e.target.value)}
               required
+              min="1"
               className="w-full rounded-lg bg-neutral-900 px-4 py-3 text-neutral-400 focus:border-blue-600 focus:outline-none"
             />
           </div>
